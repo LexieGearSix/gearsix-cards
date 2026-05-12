@@ -19,12 +19,12 @@
     .profile-photo { width: 100px; height: 100px; border-radius: 50%; border: 4px solid #ffffff; background: #cccccc; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
     .profile-photo .initials { font-size: 36px; font-weight: 700; color: #8b0000; font-family: 'Oswald', sans-serif; }
     .card-body { padding: 15px 20px 20px; text-align: center; overflow: hidden; border-radius: 0 0 4px 4px; }
-    .person-name { font-family: 'Oswald', sans-serif; font-size: 22px; font-weight: 600; color: #8b0000; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; margin-top: 12px; }
+    .person-name { font-family: 'Oswald', sans-serif; font-size: 18px; font-weight: 600; color: #8b0000; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; margin-top: 12px; }
     .person-title { font-size: 14px; color: #555; margin-bottom: 2px; }
     .person-company { font-size: 14px; color: #555; margin-bottom: 25px; }
-    .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }
+    .contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 20px; }
     .contact-item { display: flex; flex-direction: column; align-items: center; text-decoration: none; }
-    .contact-item .icon-circle { width: 55px; height: 55px; border-radius: 50%; background-color: #8b0000; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; transition: background-color 0.2s, transform 0.2s; }
+    .contact-item .icon-circle { width: 45px; height: 45px; border-radius: 50%; background-color: #8b0000; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; transition: background-color 0.2s, transform 0.2s; }
     .contact-item:hover .icon-circle { background-color: #a00000; transform: scale(1.05); }
     .contact-item .icon-circle i { color: #ffffff; font-size: 22px; }
     .contact-item .icon-label { font-size: 11px; font-weight: 600; color: #555; text-transform: uppercase; letter-spacing: 0.5px; }
@@ -58,7 +58,7 @@
       <div class="person-name">Kyle Moore</div>
       <div class="person-title">Sales</div>
       <div class="person-company">Gear Six Auto Parts</div>
-      <div class="contact-grid">
+            <div class="contact-grid">
         <a class="contact-item" href="tel:+17322549816" title="Main: 732-254-9816 ext. 108">
           <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
           <span class="icon-label">Main</span>
@@ -66,6 +66,10 @@
         <a class="contact-item" href="tel:+17328531777" title="Direct: (732) 853-1777">
           <div class="icon-circle"><i class="fa-solid fa-phone-volume"></i></div>
           <span class="icon-label">Direct</span>
+        </a>
+        <a class="contact-item" href="sms:+17328531777" title="Text: (732) 853-1777">
+          <div class="icon-circle"><i class="fa-solid fa-comment-sms"></i></div>
+          <span class="icon-label">Text</span>
         </a>
         <a class="contact-item" href="mailto:Kyle@GearSix.com" title="Kyle@GearSix.com">
           <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
@@ -75,6 +79,10 @@
           <div class="icon-circle"><i class="fa-solid fa-globe"></i></div>
           <span class="icon-label">Website</span>
         </a>
+        <a class="contact-item" href="https://www.ebay.com/str/aceautowreckers" title="eBay Store">
+          <div class="icon-circle"><i class="fa-brands fa-ebay"></i></div>
+          <span class="icon-label">eBay</span>
+        </a>
         <a class="contact-item" href="https://www.instagram.com/gearsixautoparts/" title="Instagram">
           <div class="icon-circle"><i class="fa-brands fa-instagram"></i></div>
           <span class="icon-label">Instagram</span>
@@ -82,10 +90,6 @@
         <a class="contact-item" href="https://www.facebook.com/p/Gear-Six-Auto-Parts-100064227156465/" title="Facebook">
           <div class="icon-circle"><i class="fa-brands fa-facebook-f"></i></div>
           <span class="icon-label">Facebook</span>
-        </a>
-        <a class="contact-item" href="sms:+17328531777" title="Text: (732) 853-1777">
-          <div class="icon-circle"><i class="fa-solid fa-comment-sms"></i></div>
-          <span class="icon-label">Text</span>
         </a>
       </div>
       <a class="save-btn" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Kyle%20Moore%0AORG:Gear%20Six%20Auto%20Parts%0ATITLE:Sales%0ATEL;TYPE=WORK,VOICE:7322549816%0ATEL;TYPE=DIRECT,VOICE:7328531777%0AEMAIL:Kyle%40GearSix.com%0AADR;TYPE=WORK:;;12%20Harts%20Lane;East%20Brunswick;NJ;08816;USA%0AURL:https://www.gearsix.com%0AEND:VCARD" download="Kyle-Moore.vcf">
