@@ -30,7 +30,6 @@ body {
   position: relative;
   height: 118px;
   display: flex; align-items: center;
-  /* dark gunmetal with warm dark-red tint */
   background:
     linear-gradient(175deg,
       #111111 0%,
@@ -42,7 +41,6 @@ body {
   overflow: hidden;
 }
 
-/* brushed horizontal streaks */
 .card-header::before {
   content: '';
   position: absolute; inset: 0;
@@ -57,7 +55,6 @@ body {
   pointer-events: none;
 }
 
-/* subtle automotive lighting sheen — horizontal arc */
 .card-header .sheen {
   position: absolute;
   top: -30%; left: -10%; right: -10%;
@@ -69,7 +66,6 @@ body {
   pointer-events: none;
 }
 
-/* red ambient glow behind plate */
 .card-header .red-glow {
   position: absolute; inset: 0;
   background: radial-gradient(ellipse 80% 60% at 50% 55%,
@@ -79,7 +75,6 @@ body {
   pointer-events: none;
 }
 
-/* bottom red stripe */
 .card-header .stripe {
   position: absolute;
   bottom: 0; left: 0; right: 0; height: 3px;
@@ -95,30 +90,28 @@ body {
 }
 
 /* THE PLATE — full-width, slim, embedded */
+/* Fades white/light at center to brushed gunmetal at edges */
 .logo-plate {
   position: relative; z-index: 2;
   margin: 0 8px;
   width: calc(100% - 16px);
-  /* gunmetal brushed plate — NOT bright silver */
   background:
     repeating-linear-gradient(
       90deg,
       transparent 0px,
-      rgba(255,255,255,0.03) 1px,
+      rgba(255,255,255,0.025) 1px,
       transparent 2px,
       transparent 4px
     ),
-    linear-gradient(170deg,
-      #7a7a7a 0%,
-      #5a5a5a 15%,
-      #8a8a8a 35%,
-      #4e4e4e 50%,
-      #787878 65%,
-      #5c5c5c 82%,
-      #6e6e6e 100%
+    radial-gradient(ellipse at 50% 50%,
+      #e8e8e8 0%,
+      #c8c8c8 25%,
+      #8a8a8a 55%,
+      #5c5c5c 80%,
+      #484848 100%
     );
-  border-top: 1px solid #9a9a9a;
-  border-bottom: 1px solid #333;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #2a2a2a;
   border-left: 1px solid #888;
   border-right: 1px solid #444;
   border-radius: 3px;
@@ -135,7 +128,7 @@ body {
   max-width: 260px;
   height: auto;
   display: block;
-  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.4));
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.35));
 }
 
 /* rivets — small, corners */
@@ -282,7 +275,7 @@ body {
 /* ═══ FOOTER ═══ */
 .card-footer {
   position: relative;
-  height: 100px;
+  height: 118px;
   display: flex; align-items: center;
   background:
     linear-gradient(175deg,
@@ -338,100 +331,105 @@ body {
     transparent 100%
   );
 }
+
+/* Footer plate — same as header but Team PRP logo sized smaller */
+.card-footer .logo-plate img {
+  max-width: 200px;
+}
 </style>
 </head>
 <body>
 <div class="card">
 
-  <!-- HEADER -->
-  <div class="card-header">
-    <div class="sheen"></div>
-    <div class="red-glow"></div>
-    <div class="stripe"></div>
-    <div class="logo-plate" style="position:relative;z-index:2;">
-      <span class="rivet tl"></span>
-      <span class="rivet tr"></span>
-      <span class="rivet bl"></span>
-      <span class="rivet br"></span>
-      <img src="gearsix-logo.png" alt="Gear Six Auto Parts Logo">
-    </div>
+<!-- HEADER -->
+<div class="card-header">
+  <div class="sheen"></div>
+  <div class="red-glow"></div>
+  <div class="stripe"></div>
+  <div class="logo-plate" style="position:relative;z-index:2;">
+    <span class="rivet tl"></span>
+    <span class="rivet tr"></span>
+    <span class="rivet bl"></span>
+    <span class="rivet br"></span>
+    <img src="gearsix-logo.png" alt="Gear Six Auto Parts Logo">
   </div>
+</div>
 
-  <!-- PROFILE PHOTO -->
-  <div class="profile-photo-wrap">
-    <div class="profile-photo">
-      <img src="Chris%20Fanelli%20Head%20shot.png" alt="Chris Fanelli">
-    </div>
+<!-- PROFILE PHOTO -->
+<div class="profile-photo-wrap">
+  <div class="profile-photo">
+    <img src="Chris%20Fanelli%20Head%20shot.png" alt="Chris Fanelli">
   </div>
+</div>
 
-  <!-- BODY -->
-  <div class="card-body">
-    <div class="person-name">Chris Fanelli</div>
-    <div class="person-title">Sales Manager</div>
-    <div class="person-company">Gear Six Auto Parts</div>
-    <div class="divider"><span class="divider-text">Contact</span></div>
-    <div class="contact-grid">
-      <a class="contact-item" href="tel:+17322549816" title="Main: 732-254-9816 ext. 101">
-        <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
-        <span class="icon-label">Main</span>
-      </a>
-      <a class="contact-item" href="tel:+17324844688" title="Direct: (732) 484-4688">
-        <div class="icon-circle"><i class="fa-solid fa-phone-volume"></i></div>
-        <span class="icon-label">Direct</span>
-      </a>
-      <a class="contact-item" href="sms:+17322549816" title="Text: 732-254-9816">
-        <div class="icon-circle"><i class="fa-solid fa-comment-sms"></i></div>
-        <span class="icon-label">Text</span>
-      </a>
-      <a class="contact-item" href="mailto:Chris@GearSix.com" title="Chris@GearSix.com">
-        <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
-        <span class="icon-label">Email</span>
-      </a>
-      <a class="contact-item" href="https://www.gearsix.com" title="www.GearSix.com">
-        <div class="icon-circle"><i class="fa-solid fa-globe"></i></div>
-        <span class="icon-label">Website</span>
-      </a>
-      <a class="contact-item" href="https://www.ebay.com/str/aceautowreckers" title="eBay Store">
-        <div class="icon-circle"><i class="fa-brands fa-ebay"></i></div>
-        <span class="icon-label">eBay</span>
-      </a>
-      <a class="contact-item" href="https://www.instagram.com/gearsixautoparts/" title="Instagram">
-        <div class="icon-circle"><i class="fa-brands fa-instagram"></i></div>
-        <span class="icon-label">Instagram</span>
-      </a>
-      <a class="contact-item" href="https://www.facebook.com/p/Gear-Six-Auto-Parts-100064227156465/" title="Facebook">
-        <div class="icon-circle"><i class="fa-brands fa-facebook-f"></i></div>
-        <span class="icon-label">Facebook</span>
-      </a>
-    </div>
-    <a class="save-btn" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Chris%20Fanelli%0AN:Fanelli;Chris;;;%0AORG:Gear%20Six%20Auto%20Parts%0ATITLE:Sales%20Manager%0ATEL;TYPE=WORK,VOICE:7322549816%0ATEL;TYPE=DIRECT,VOICE:7324844688%0AEMAIL:Chris%40GearSix.com%0AADR;TYPE=WORK:;;12%20Harts%20Lane;East%20Brunswick;NJ;08816;USA%0AURL:https://www.gearsix.com%0AEND:VCARD" download="Chris-Fanelli.vcf">
-      <i class="fa-solid fa-user-plus"></i> Save Contact
+<!-- BODY -->
+<div class="card-body">
+  <div class="person-name">Chris Fanelli</div>
+  <div class="person-title">Sales Manager</div>
+  <div class="person-company">Gear Six Auto Parts</div>
+  <div class="divider"><span class="divider-text">Contact</span></div>
+  <div class="contact-grid">
+    <a class="contact-item" href="tel:+17322549816" title="Main: 732-254-9816 ext. 101">
+      <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+      <span class="icon-label">Main</span>
     </a>
-    <div class="address-section">
-      <h3>Address</h3>
-      <p><a href="https://maps.google.com/?q=12+Harts+Lane+East+Brunswick+NJ+08816" target="_blank">12 Harts Lane<br>East Brunswick, NJ 08816</a></p>
-    </div>
-    <div class="social-section">
-      <a class="social-link" href="https://www.instagram.com/gearsixautoparts/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-      <a class="social-link" href="https://www.facebook.com/p/Gear-Six-Auto-Parts-100064227156465/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-      <a class="social-link" href="https://www.ebay.com/str/aceautowreckers" target="_blank" title="eBay Store"><i class="fa-brands fa-ebay"></i></a>
-      <a class="social-link" href="https://www.gearsix.com" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
-    </div>
+    <a class="contact-item" href="tel:+17324844688" title="Direct: (732) 484-4688">
+      <div class="icon-circle"><i class="fa-solid fa-phone-volume"></i></div>
+      <span class="icon-label">Direct</span>
+    </a>
+    <a class="contact-item" href="sms:+17322549816" title="Text: 732-254-9816">
+      <div class="icon-circle"><i class="fa-solid fa-comment-sms"></i></div>
+      <span class="icon-label">Text</span>
+    </a>
+    <a class="contact-item" href="mailto:Chris@GearSix.com" title="Chris@GearSix.com">
+      <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+      <span class="icon-label">Email</span>
+    </a>
+    <a class="contact-item" href="https://www.gearsix.com" title="www.GearSix.com">
+      <div class="icon-circle"><i class="fa-solid fa-globe"></i></div>
+      <span class="icon-label">Website</span>
+    </a>
+    <a class="contact-item" href="https://www.ebay.com/str/aceautowreckers" title="eBay Store">
+      <div class="icon-circle"><i class="fa-brands fa-ebay"></i></div>
+      <span class="icon-label">eBay</span>
+    </a>
+    <a class="contact-item" href="https://www.instagram.com/gearsixautoparts/" title="Instagram">
+      <div class="icon-circle"><i class="fa-brands fa-instagram"></i></div>
+      <span class="icon-label">Instagram</span>
+    </a>
+    <a class="contact-item" href="https://www.facebook.com/p/Gear-Six-Auto-Parts-100064227156465/" title="Facebook">
+      <div class="icon-circle"><i class="fa-brands fa-facebook-f"></i></div>
+      <span class="icon-label">Facebook</span>
+    </a>
   </div>
+  <a class="save-btn" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Chris%20Fanelli%0AN:Fanelli;Chris;;;%0AORG:Gear%20Six%20Auto%20Parts%0ATITLE:Sales%20Manager%0ATEL;TYPE=WORK,VOICE:7322549816%0ATEL;TYPE=DIRECT,VOICE:7324844688%0AEMAIL:Chris%40GearSix.com%0AADR;TYPE=WORK:;;12%20Harts%20Lane;East%20Brunswick;NJ;08816;USA%0AURL:https://www.gearsix.com%0AEND:VCARD" download="Chris-Fanelli.vcf">
+    <i class="fa-solid fa-user-plus"></i> Save Contact
+  </a>
+  <div class="address-section">
+    <h3>Address</h3>
+    <p><a href="https://maps.google.com/?q=12+Harts+Lane+East+Brunswick+NJ+08816" target="_blank">12 Harts Lane<br>East Brunswick, NJ 08816</a></p>
+  </div>
+  <div class="social-section">
+    <a class="social-link" href="https://www.instagram.com/gearsixautoparts/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="social-link" href="https://www.facebook.com/p/Gear-Six-Auto-Parts-100064227156465/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a class="social-link" href="https://www.ebay.com/str/aceautowreckers" target="_blank" title="eBay Store"><i class="fa-brands fa-ebay"></i></a>
+    <a class="social-link" href="https://www.gearsix.com" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
+  </div>
+</div>
 
-  <!-- FOOTER -->
-  <div class="card-footer">
-    <div class="sheen"></div>
-    <div class="red-glow"></div>
-    <div class="stripe"></div>
-    <div class="logo-plate" style="position:relative;z-index:2;">
-      <span class="rivet tl"></span>
-      <span class="rivet tr"></span>
-      <span class="rivet bl"></span>
-      <span class="rivet br"></span>
-      <img src="teamprp.png" alt="Team PRP Premium Recycled Parts Affiliate">
-    </div>
+<!-- FOOTER -->
+<div class="card-footer">
+  <div class="sheen"></div>
+  <div class="red-glow"></div>
+  <div class="stripe"></div>
+  <div class="logo-plate" style="position:relative;z-index:2;">
+    <span class="rivet tl"></span>
+    <span class="rivet tr"></span>
+    <span class="rivet bl"></span>
+    <span class="rivet br"></span>
+    <img src="teamprp.png" alt="Team PRP Premium Recycled Parts Affiliate">
   </div>
+</div>
 
 </div>
 </body>
