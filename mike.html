@@ -4,120 +4,123 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mike Brack | Sales – Gear Six Auto Parts</title>
+<meta property="og:title" content="Mike Brack | Sales – Gear Six Auto Parts">
+<meta property="og:description" content="Contact Mike Brack at Gear Six Auto Parts">
+<meta property="og:url" content="https://gearsixautoparts.github.io/gearsix-cards/mike.html">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background-color: #f0f0f0; font-family: 'Open Sans', sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 20px 0 40px; }
-.card { background: #ffffff; width: 100%; max-width: 420px; border: 1px solid #ddd; border-radius: 4px; overflow: visible; box-shadow: 0 2px 12px rgba(0,0,0,0.12); }
-.card-header { background: linear-gradient(135deg, #8b0000 0%, #c0392b 50%, #8b0000 100%); padding: 28px 20px 40px; text-align: center; position: relative; border-radius: 4px 4px 0 0; overflow: hidden; }
-.card-header::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 30px; background: #ffffff; clip-path: ellipse(55% 100% at 50% 100%); }
-.logo-container { display: flex; justify-content: center; align-items: center; }
-.logo-container img { max-width: 240px; height: auto; background: #ffffff; padding: 8px 12px; border-radius: 6px; display: block; margin: 0 auto; }
-.profile-photo-wrap { display: flex; justify-content: center; padding-top: 20px; padding-bottom: 10px; background: #ffffff; }
-.profile-photo { width: 100px; height: 100px; border-radius: 50%; border: 4px solid #e0e0e0; background: #cccccc; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+body { background: #b0b8c1; font-family: 'Open Sans', sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 20px 0 40px; }
+.card { background: linear-gradient(160deg, #e8ecef 0%, #d0d5da 40%, #e2e6e9 70%, #c8cdd2 100%); width: 100%; max-width: 420px; border: 1px solid #a0a8b0; border-radius: 6px; overflow: visible; box-shadow: 0 6px 24px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.6); }
+.card-header { background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255,255,255,0.06) 3px, rgba(255,255,255,0.06) 4px), linear-gradient(135deg, #1a1a2e 0%, #8b0000 30%, #c0392b 55%, #8b0000 75%, #1a1a2e 100%); padding: 28px 20px 50px; text-align: center; position: relative; border-radius: 5px 5px 0 0; }
+.card-header::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 32px; background: linear-gradient(160deg, #e8ecef 0%, #d0d5da 100%); clip-path: ellipse(55% 100% at 50% 100%); }
+.card-header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #888, #ddd, #aaa, #fff, #aaa, #ddd, #888); border-radius: 5px 5px 0 0; }
+.logo-container { display: flex; justify-content: center; position: relative; z-index: 2; }
+.logo-container img { max-width: 220px; height: auto; }
+.profile-photo-wrap { display: flex; justify-content: center; margin-top: -50px; position: relative; z-index: 2; }
+.profile-photo { width: 100px; height: 100px; border-radius: 50%; border: 4px solid transparent; background: linear-gradient(#d0d5da, #d0d5da) padding-box, linear-gradient(135deg, #fff, #888, #fff, #666) border-box; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.3), inset 0 1px 2px rgba(255,255,255,0.5); }
 .profile-photo img { width: 100%; height: 100%; object-fit: cover; }
 .profile-photo .initials { font-size: 36px; font-weight: 700; color: #8b0000; font-family: 'Oswald', sans-serif; }
-.card-body { padding: 0 20px 20px; text-align: center; overflow: hidden; border-radius: 0 0 4px 4px; }
-.person-name { font-family: 'Oswald', sans-serif; font-size: 18px; font-weight: 600; color: #8b0000; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; margin-top: 8px; }
-.person-title { font-size: 14px; color: #555; margin-bottom: 2px; }
-.person-company { font-size: 14px; color: #555; margin-bottom: 25px; }
-.contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 20px; }
+.card-body { padding: 15px 20px 20px; text-align: center; }
+.person-name { font-family: 'Oswald', sans-serif; font-size: 24px; font-weight: 700; background: linear-gradient(180deg, #222 0%, #555 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 4px; margin-top: 10px; }
+.person-title { font-size: 12px; color: #8b0000; margin-bottom: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+.person-company { font-size: 13px; color: #666; margin-bottom: 18px; }
+.divider { display: flex; align-items: center; gap: 8px; margin: 0 0 18px; }
+.divider::before, .divider::after { content: ''; flex: 1; height: 2px; background: linear-gradient(90deg, transparent, #aaa, transparent); }
+.divider-text { font-family: 'Oswald', sans-serif; font-size: 10px; color: #999; letter-spacing: 3px; text-transform: uppercase; }
+.contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px; }
 .contact-item { display: flex; flex-direction: column; align-items: center; text-decoration: none; }
-.contact-item .icon-circle { width: 45px; height: 45px; border-radius: 50%; background-color: #8b0000; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; transition: background-color 0.2s, transform 0.2s; }
-.contact-item:hover .icon-circle { background-color: #a00000; transform: scale(1.05); }
-.contact-item .icon-circle i { color: #ffffff; font-size: 22px; }
-.contact-item .icon-label { font-size: 11px; font-weight: 600; color: #555; text-transform: uppercase; letter-spacing: 0.5px; }
-.save-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: #8b0000; color: #ffffff; text-decoration: none; padding: 13px 30px; border-radius: 30px; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin: 10px 0 20px; transition: background-color 0.2s; width: 80%; }
-.save-btn:hover { background-color: #a00000; }
-.address-section { margin: 15px 0; padding: 15px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
-.address-section h3 { font-family: 'Oswald', sans-serif; font-size: 16px; color: #333; margin-bottom: 6px; }
-.address-section p { font-size: 13px; color: #555; line-height: 1.5; }
+.contact-item .icon-circle { width: 45px; height: 45px; border-radius: 50%; background: linear-gradient(145deg, #e8ecef, #c0c5ca); border: 1px solid rgba(255,255,255,0.8); display: flex; align-items: center; justify-content: center; margin-bottom: 6px; transition: all 0.2s; box-shadow: 3px 3px 6px rgba(0,0,0,0.2), -1px -1px 3px rgba(255,255,255,0.7); }
+.contact-item:hover .icon-circle { background: linear-gradient(145deg, #8b0000, #c0392b); box-shadow: 3px 3px 8px rgba(0,0,0,0.3), 0 0 12px rgba(139,0,0,0.3); transform: scale(1.05); }
+.contact-item .icon-circle i { color: #8b0000; font-size: 17px; transition: color 0.2s; }
+.contact-item:hover .icon-circle i { color: #fff; }
+.contact-item .icon-label { font-size: 10px; font-weight: 600; color: #666; text-transform: uppercase; letter-spacing: 0.5px; }
+.save-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(135deg, #8b0000 0%, #c0392b 50%, #8b0000 100%); color: #fff; text-decoration: none; padding: 13px 30px; border-radius: 30px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin: 8px 0 18px; width: 85%; box-shadow: 0 4px 12px rgba(139,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.15); }
+.save-btn:hover { background: linear-gradient(135deg, #a00000 0%, #e04030 50%, #a00000 100%); }
+.address-section { margin: 12px 0; padding: 12px 15px; border-top: 1px solid rgba(0,0,0,0.1); border-bottom: 1px solid rgba(0,0,0,0.1); }
+.address-section h3 { font-family: 'Oswald', sans-serif; font-size: 13px; color: #555; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+.address-section p { font-size: 13px; color: #666; line-height: 1.5; }
 .address-section a { color: #8b0000; text-decoration: none; }
-.social-section { display: flex; justify-content: center; gap: 15px; margin: 15px 0 20px; }
-.social-link { width: 40px; height: 40px; border-radius: 50%; background-color: #8b0000; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: background-color 0.2s, transform 0.2s; }
-.social-link:hover { background-color: #a00000; transform: scale(1.05); }
-.social-link i { color: #ffffff; font-size: 18px; }
-.card-footer { background: #f8f8f8; padding: 15px; text-align: center; border-top: 1px solid #eee; }
-.card-footer img { max-width: 160px; height: auto; }
+.social-section { display: flex; justify-content: center; gap: 12px; margin: 12px 0 18px; }
+.social-link { width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(145deg, #e8ecef, #c0c5ca); box-shadow: 2px 2px 5px rgba(0,0,0,0.2), -1px -1px 3px rgba(255,255,255,0.7); display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.2s; }
+.social-link:hover { background: linear-gradient(145deg, #8b0000, #c0392b); }
+.social-link i { color: #8b0000; font-size: 16px; transition: color 0.2s; }
+.social-link:hover i { color: white; }
+.card-footer { background: linear-gradient(135deg, #1a1a2e, #2d1a0e); padding: 14px; text-align: center; border-top: 3px solid #8b0000; border-radius: 0 0 5px 5px; }
+.card-footer img { max-width: 140px; height: auto; }
 </style>
 </head>
 <body>
 <div class="card">
-  <div class="card-header">
-    <div class="logo-container">
-      <img src="gearsix-logo.png" alt="Gear Six Auto Parts Logo">
-    </div>
-  </div>
-  <div class="profile-photo-wrap">
-    <div class="profile-photo">
-      <span class="initials">MB</span>
-    </div>
-  </div>
-  <div class="card-body">
-    <div class="person-name">Mike Brack</div>
-    <div class="person-title">Sales</div>
-    <div class="person-company">Gear Six Auto Parts</div>
-        <div class="contact-grid">
-      <a class="contact-item" href="tel:+17322549816" title="Main: 732-254-9816 ext. 104">
-        <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
-        <span class="icon-label">Main</span>
-      </a>
-      <a class="contact-item" href="tel:+19739549271" title="Direct: (973) 954-9271">
-        <div class="icon-circle"><i class="fa-solid fa-phone-volume"></i></div>
-        <span class="icon-label">Direct</span>
-      </a>
-      <a class="contact-item" href="sms:+19739549271" title="Text: (973) 954-9271">
-        <div class="icon-circle"><i class="fa-solid fa-comment-sms"></i></div>
-        <span class="icon-label">Text</span>
-      </a>
-      <a class="contact-item" href="mailto:Mike@GearSix.com" title="Mike@GearSix.com">
-        <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
-        <span class="icon-label">Email</span>
-      </a>
-      <a class="contact-item" href="https://www.gearsix.com" title="www.GearSix.com">
-        <div class="icon-circle"><i class="fa-solid fa-globe"></i></div>
-        <span class="icon-label">Website</span>
-      </a>
-      <a class="contact-item" href="https://www.ebay.com/str/aceautowreckers" title="eBay Store">
-        <div class="icon-circle"><i class="fa-brands fa-ebay"></i></div>
-        <span class="icon-label">eBay</span>
-      </a>
-      <a class="contact-item" href="https://www.instagram.com/gearsixautoparts/" title="Instagram">
-        <div class="icon-circle"><i class="fa-brands fa-instagram"></i></div>
-        <span class="icon-label">Instagram</span>
-      </a>
-      <a class="contact-item" href="https://www.facebook.com/p/Gear-Six-Auto-Parts-100064227156465/" title="Facebook">
-        <div class="icon-circle"><i class="fa-brands fa-facebook-f"></i></div>
-        <span class="icon-label">Facebook</span>
-      </a>
-    </div>
-    <a class="save-btn" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Mike%20Brack%0AORG:Gear%20Six%20Auto%20Parts%0ATITLE:Sales%0ATEL;TYPE=WORK,VOICE:7322549816%0ATEL;TYPE=DIRECT,VOICE:9739549271%0AEMAIL:Mike%40GearSix.com%0AADR;TYPE=WORK:;;12%20Harts%20Lane;East%20Brunswick;NJ;08816;USA%0AURL:https://www.gearsix.com%0AEND:VCARD" download="Mike-Brack.vcf">
-      <i class="fa-solid fa-user-plus"></i> Save Contact
-    </a>
-    <div class="address-section">
-      <h3>Address</h3>
-      <p><a href="https://maps.google.com/?q=12+Harts+Lane+East+Brunswick+NJ+08816" target="_blank">12 Harts Lane<br>East Brunswick, NJ 08816</a></p>
-    </div>
-    <div class="social-section">
-      <a class="social-link" href="https://www.instagram.com/gearsixautoparts/" target="_blank" title="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a class="social-link" href="https://www.facebook.com/p/Gear-Six-Auto-Parts-100064227156465/" target="_blank" title="Facebook">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-      <a class="social-link" href="https://www.ebay.com/str/aceautowreckers" target="_blank" title="eBay Store">
-        <i class="fa-brands fa-ebay"></i>
-      </a>
-      <a class="social-link" href="https://www.gearsix.com" target="_blank" title="Website">
-        <i class="fa-solid fa-globe"></i>
-      </a>
-    </div>
-  </div>
-  <div class="card-footer">
-    <img src="teamprp.png" alt="Team PRP Premium Recycled Parts Affiliate">
-  </div>
+<div class="card-header">
+<div class="logo-container">
+<img src="gearsix-logo.png" alt="Gear Six Auto Parts Logo">
+</div>
+</div>
+<div class="profile-photo-wrap">
+<div class="profile-photo">
+<span class="initials">MB</span>
+</div>
+</div>
+<div class="card-body">
+<div class="person-name">Mike Brack</div>
+<div class="person-title">Sales</div>
+<div class="person-company">Gear Six Auto Parts</div>
+<div class="divider"><span class="divider-text">Contact</span></div>
+<div class="contact-grid">
+<a class="contact-item" href="tel:+17322549816" title="Main: 732-254-9816 ext. 104">
+<div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+<span class="icon-label">Main</span>
+</a>
+<a class="contact-item" href="tel:+19739549271" title="Direct: (973) 954-9271">
+<div class="icon-circle"><i class="fa-solid fa-phone-volume"></i></div>
+<span class="icon-label">Direct</span>
+</a>
+<a class="contact-item" href="sms:+19739549271" title="Text: (973) 954-9271">
+<div class="icon-circle"><i class="fa-solid fa-comment-sms"></i></div>
+<span class="icon-label">Text</span>
+</a>
+<a class="contact-item" href="mailto:Mike@GearSix.com" title="Mike@GearSix.com">
+<div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+<span class="icon-label">Email</span>
+</a>
+<a class="contact-item" href="https://www.gearsix.com" title="www.GearSix.com">
+<div class="icon-circle"><i class="fa-solid fa-globe"></i></div>
+<span class="icon-label">Website</span>
+</a>
+<a class="contact-item" href="https://www.ebay.com/str/aceautowreckers" title="eBay Store">
+<div class="icon-circle"><i class="fa-brands fa-ebay"></i></div>
+<span class="icon-label">eBay</span>
+</a>
+<a class="contact-item" href="https://www.instagram.com/gearsixautoparts/" title="Instagram">
+<div class="icon-circle"><i class="fa-brands fa-instagram"></i></div>
+<span class="icon-label">Instagram</span>
+</a>
+<a class="contact-item" href="https://www.facebook.com/p/Gear-Six-Auto-Parts-100064227156465/" title="Facebook">
+<div class="icon-circle"><i class="fa-brands fa-facebook-f"></i></div>
+<span class="icon-label">Facebook</span>
+</a>
+</div>
+<a class="save-btn" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Mike%20Brack%0AORG:Gear%20Six%20Auto%20Parts%0ATITLE:Sales%0ATEL;TYPE=WORK,VOICE:7322549816%0ATEL;TYPE=DIRECT,VOICE:9739549271%0AEMAIL:Mike%40GearSix.com%0AADR;TYPE=WORK:;;12%20Harts%20Lane;East%20Brunswick;NJ;08816;USA%0AURL:https://www.gearsix.com%0AEND:VCARD" download="Mike-Brack.vcf">
+<i class="fa-solid fa-user-plus"></i> Save Contact
+</a>
+<div class="address-section">
+<h3>Address</h3>
+<p><a href="https://maps.google.com/?q=12+Harts+Lane+East+Brunswick+NJ+08816" target="_blank">12 Harts Lane<br>East Brunswick, NJ 08816</a></p>
+</div>
+<div class="social-section">
+<a class="social-link" href="https://www.instagram.com/gearsixautoparts/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a class="social-link" href="https://www.facebook.com/p/Gear-Six-Auto-Parts-100064227156465/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+<a class="social-link" href="https://www.ebay.com/str/aceautowreckers" target="_blank" title="eBay Store"><i class="fa-brands fa-ebay"></i></a>
+<a class="social-link" href="https://www.gearsix.com" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
+</div>
+</div>
+<div class="card-footer">
+<img src="teamprp.png" alt="Team PRP Premium Recycled Parts Affiliate">
+</div>
 </div>
 </body>
 </html>
